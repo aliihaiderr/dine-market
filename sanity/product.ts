@@ -1,3 +1,5 @@
+import { defineField } from "sanity"
+
 const product = {
     name: 'product',
     type: 'document',
@@ -23,19 +25,18 @@ const product = {
                 layout: 'radio'
               }
         },
-        {
+        defineField(
+            {
             name: 'category',
-            type: 'string',
+            type: 'reference',
             title: 'Product Category',
-            options: {
-                list: [
-                  {title: 'Women', value: 'women'},
-                  {title: 'Men', value: 'men'},
-                  {title: 'Kids', value: 'kids'},
-                ],
-                layout: 'radio'
-              }
-        },
+            to: [
+                {
+                    type : 'category'
+                },
+            ]
+          }
+        ),
         {
             name: 'price',
             type: 'number',
@@ -62,17 +63,20 @@ const product = {
                 ]
               }
         },
-        {
-            name: 'image',
-            type: 'array',
-            title: 'Product Image',
-            // The of property specifies which value types the array may hold.
-            of : [{         
-                name : 'img',
-                title : 'Image',
-                type : 'image'
-            }]
-        },
+        {         
+            name : 'image',
+            title : 'Product Image',
+            type : 'image'
+        }
+        // {
+        //     name: 'image',
+        //     type: 'array',
+        //     title: 'Product Image',
+        //     // The of property specifies which value types the array may hold.
+        //     of : [{         
+        //         type : 'image'
+        //     }]
+        // },
     ]
 }
 
