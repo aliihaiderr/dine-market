@@ -63,20 +63,15 @@ const product = {
                 ]
               }
         },
-        {         
-            name : 'image',
-            title : 'Product Image',
-            type : 'image'
-        }
-        // {
-        //     name: 'image',
-        //     type: 'array',
-        //     title: 'Product Image',
-        //     // The of property specifies which value types the array may hold.
-        //     of : [{         
-        //         type : 'image'
-        //     }]
-        // },
+        {
+            name: 'image',
+            type: 'array',
+            title: 'Product Image',
+            // The of property specifies which value types the array may hold.
+            of : [{         
+                type : 'image'
+            }]
+        },
     ]
 }
 
