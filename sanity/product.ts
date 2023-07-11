@@ -16,11 +16,11 @@ const product = {
             title: 'Product Type',
             options: {
                 list: [
-                  {title: 'Sweater', value: 'sweater'},
-                  {title: 'Dress', value: 'dress'},
-                  {title: 'Pant', value: 'pant'},
-                  {title: 'Jacket', value: 'jacket'},
-                  {title: 'T Shirt', value: 't shirt'},
+                  {title: 'Sweater', value: 'Sweater'},
+                  {title: 'Dress', value: 'Dress'},
+                  {title: 'Pant', value: 'Pant'},
+                  {title: 'Jacket', value: 'Jacket'},
+                  {title: 'T Shirt', value: 'T Shirt'},
                 ],
                 layout: 'radio'
               }
