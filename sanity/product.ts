@@ -56,10 +56,10 @@ const product = {
             }],
             options: {
                 list: [
-                    {title: 'Hand wash using cold water.', value: 'opt1'},
-                    {title: 'Do not using bleach.', value: 'opt2'},
-                    {title: 'Hang it to dry.', value: 'opt3'},
-                    {title: 'Iron on low temperature.', value: 'opt4'},
+                    {title: 'Hand wash using cold water', value: 'Hand wash using cold water.'},
+                    {title: 'Do not using bleach', value: 'Do not using bleach.'},
+                    {title: 'Hang it to dry', value: 'Hang it to dry.'},
+                    {title: 'Iron on low temperature', value: 'Iron on low temperature.'},
                 ]
               }
         },
