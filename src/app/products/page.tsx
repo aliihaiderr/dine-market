@@ -33,7 +33,7 @@ export default async function page() {
       <div className='grid grid-cols-4 justify-items-center gap-16 my-16 mx-32'>
         {data.map((item) =>(
             <div key={item._id}>
-              <Link href={`/products/${item._id}`}>
+              <Link href={`/product/${item._id}`}>
                 <div>
                   <Image src={urlForImage(item.image[0]).url()} alt='productImg' height={270} width={250} />
                   <p className='text-[1.05rem] leading-6 mt-2 font-semibold tracking-wide text-[#212121]'>{item.name}</p>
