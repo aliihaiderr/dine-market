@@ -4,7 +4,6 @@ import {client} from '../../../sanity/lib/client';
 import { Image as IImage } from 'sanity';
 import { urlForImage } from '../../../sanity/lib/image';
 import Link from 'next/link';
-import product from '../../../sanity/product';
 
 
   
