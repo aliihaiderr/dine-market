@@ -3,7 +3,7 @@ import Image from 'next/image';
 import {client} from '../../../sanity/lib/client';
 import { Image as IImage } from 'sanity';
 import { urlForImage } from '../../../sanity/lib/image';
-import { Link } from 'lucide-react';
+import Link from 'next/link';
 
 export const getProductData = async () => {
  const response = await client.fetch(`*[_type=="product" && category->name=='Male']{_id,name,type,price,image[]}`);
