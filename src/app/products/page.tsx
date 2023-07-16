@@ -12,7 +12,7 @@ import Link from 'next/link';
   // we also fetch only title and description by using curly braces after square brackets like "{name,description}".
 
 
-export const getProductData = async () => {
+const getProductData = async () => {
  const response = await client.fetch(`*[ _type == 'product']{_id,name,type,price,image[]}`);
  return response;
 }

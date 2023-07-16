@@ -5,7 +5,7 @@ import { Image as IImage } from 'sanity';
 import { urlForImage } from '../../../sanity/lib/image';
 import Link from 'next/link';
 
-export const getProductData = async () => {
+const getProductData = async () => {
  const response = await client.fetch(`*[_type=="product" && category->name=='Female']{_id,name,type,price,image[]}`);
  return response;
 }
