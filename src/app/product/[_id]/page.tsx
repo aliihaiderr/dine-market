@@ -25,7 +25,7 @@ interface Product {
 }
 
 
-export default async function page({ params }: { params: { _id: string } }) {
+export default async function Page({ params }: { params: { _id: string } }) {
   const data :Product[]  = await getProductData(params._id);
   return (
     <div className='bg-[#fcfcfc] py-16 px-32'>

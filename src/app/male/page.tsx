@@ -18,7 +18,7 @@ interface Product {
   image : IImage[],
 }
 
-export default async function page() {
+export default async function Page() {
   const data :Product[]  = await getProductData();
   return (
     <main>
