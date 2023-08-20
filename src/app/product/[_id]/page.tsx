@@ -1,12 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import { Button } from "@/components/ui/button";
-import {FiShoppingCart} from 'react-icons/fi';
 import {AiOutlineMinus,AiOutlinePlus} from 'react-icons/ai';
 import {client} from '../../../../sanity/lib/client';
 import { Image as IImage } from 'sanity';
 import { urlForImage } from '../../../../sanity/lib/image';
-
+import CartButton from '@/components/CartButton';
 
 
 async function getProductData(id1: string) {
@@ -70,9 +68,7 @@ export default async function Page({ params }: { params: { _id: string } }) {
                 </div>
               </div>
               <div className='flex gap-4'>
-                <Button className='px-6'>
-                  <FiShoppingCart className="mr-2 h-5 w-5" />  Add to Cart
-                </Button>
+                <CartButton _id = {data[0]._id} />     
                 <p className='font-bold text-2xl tracking-widest text-[#212121]'>${data[0].price}</p>
               </div>
             </div>
